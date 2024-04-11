@@ -10,7 +10,7 @@ phases:
     commands:
       - echo "Zipping deployment package..."
       - cd lib
-      - zip -r9 ../airbnb_deployment_package.zip.
+      - zip -r9 ../airbnb_deployment_package.zip .
       - cd ..
       - zip -g airbnb_deployment_package.zip  airbnb_booking_mockdata.py airbnb_enrichment.py
   post_build:
